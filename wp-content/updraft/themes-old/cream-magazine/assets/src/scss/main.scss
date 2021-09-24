@@ -1,0 +1,96 @@
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.
+. @ All the scss files are include from here
+.
+. @ Author : Themebeez
+.
+. @ Author URL : https://themebeez.com/
+.
+. @ Project : Cream Magazine
+.
+. @ Since : 18 April 2018
+.
+. @ Current SCSS version : 2.0.3
+.
+. @ Last Updated : 11 May 2020
+.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+@charset "UTF-8";
+
+
+// Variables 
+
+@import 'variables/variables-color';
+@import 'variables/variables-typography';
+@import 'variables/woo-variables';
+
+
+// Import mixins  
+
+@import 'mixins/mixins';
+
+
+// CSS framework ( Bootstrap )
+
+@import 'base/base';
+@import 'framework/bootstrap';
+
+
+// External plugins & library
+
+
+@import 'plugins/owlcarousel';
+@import 'plugins/animate';
+
+
+// Icon fonts ( eg: fontAwesome )
+
+
+@import 'fonticons/fonticon';
+
+
+// Custom Stylesheet ( Table of content inside at styles )
+
+@import 'custom/post-meta';
+@import 'custom/cream-magazine';
+@import 'custom/menu';
+@import 'custom/styles';
+@import 'custom/banner';
+@import 'custom/news-ticker';
+@import 'custom/single';
+@import 'custom/widgets';
+@import 'custom/custom-widgets';
+@import 'custom/news-widgets';
+@import 'custom/header';
+@import 'custom/breadcrumb';
+@import 'custom/footer';
+@import 'custom/sidebar';
+@import 'custom/404';
+@import 'custom/cream-magazine';
+@import 'custom/archive';
+@import 'custom/nothing-found';
+@import 'custom/pagination';
+@import 'custom/news-widgets';
+@import 'custom/editor';
+@import 'custom/blocks';
+@import 'wordpress/wpstyles';
+@import 'wordpress/woocommerce';
+
+
+// Responsive or Media query
+
+
+@import 'responsive/responsive';
+
+
+// Keyframes 
+
+
+@import 'custom/keyframe';

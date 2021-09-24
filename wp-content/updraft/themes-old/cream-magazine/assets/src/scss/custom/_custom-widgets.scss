@@ -1,0 +1,173 @@
+// Author Widget
+
+.cm_author_widget .author_thumb img {
+	
+	display:block;
+    object-fit:cover;
+    object-position:center;
+    width: 100%;
+    height: auto;
+}
+
+.cm_author_widget .author_name {
+	
+	margin: 20px 0px 10px;
+}
+
+.cm_author_widget .author_name h4 {
+
+	font-size: $typo_medium;
+}
+
+.cm_author_widget .author_desc {
+
+	margin-bottom: 30px;
+}
+
+.cm_author_widget .author-detail-link {
+	
+	margin-top: 15px;
+}
+
+.cm_author_widget .author-detail-link a {
+	
+	padding: 10px 20px;
+    color: #ffffff;
+    background-color: $secondary_color;
+}
+
+.cm_author_widget .author-detail-link a:hover {
+	
+	background-color: $primary_color;
+    color:$white;
+}
+
+.sidebar-widget-area .widget .cm_author_widget .author-detail-link a,
+.sidebar-widget-area .widget .cm_author_widget .author-detail-link a:hover {
+
+    color:$white;
+}
+
+footer .widget .cm_author_widget .author-detail-link a,
+footer .widget .cm_author_widget .author-detail-link a:hover {
+
+    color:$white;
+}
+
+
+/* Recent Posts Widget */
+
+.widget ul.post_meta li {
+    
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.cm_recent_posts_widget .box {
+	
+	margin-bottom: 20px;
+}
+
+.cm_recent_posts_widget .box:last-child {
+
+    margin-bottom: 0;
+}
+
+.cm_recent_posts_widget .post_title h2 {
+
+    font-size: $body_font_size;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.cm_recent_posts_widget .post_meta {
+
+    margin-top: 10px;
+}
+
+
+/* Social Links Widget */
+
+.social_widget_style_1 ul {
+
+    list-style: none;
+}
+
+.social_widget_style_1 ul li {
+
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social_widget_style_1 ul li:last-child {
+	
+	margin-bottom: 0px;
+}
+
+.social_widget_style_1 ul li a {
+
+    display: block;
+    overflow: auto;
+    color: $white;
+    border: none;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.social_widget_style_1 ul li a i {
+	
+	width: 50px;
+	display: inline-block;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.social_widget_style_1 ul li a span {
+
+    text-align: right;
+    display: inline-block;
+    font-size: 14px;
+    width: calc( 100% - 50px );
+    padding-right: 10px;
+    @include transation_delay();
+}
+
+.social_widget_style_1 ul li a:hover span {
+	
+	padding-right: 30px;
+}
+
+.social_widget_style_1 ul li.fb a {
+
+    background: $facebook;
+}
+
+.social_widget_style_1 ul li.tw a {
+
+    background: $twitter;
+}
+
+.social_widget_style_1 ul li.insta a {
+
+    background: $instagram;
+}
+
+.social_widget_style_1 ul li.linken a {
+
+    background: $linkedin;
+}
+
+.social_widget_style_1 ul li.pin a {
+
+    background: $pinterest;
+}
+
+.social_widget_style_1 ul li.yt a {
+
+    background: $youtube;
+}
+
+.social_widget_style_1 ul li.gplus a {
+
+    background: $googleplus;
+}

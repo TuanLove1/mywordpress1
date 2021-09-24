@@ -1,0 +1,104 @@
+body.home .breadcrumb {
+
+    display:none; // hide breadcrumb if static front page is set as homepage
+}
+
+.breadcrumb {
+    
+    position:relative;
+    background: rgba(0,0,0,0.03);
+    padding: 7px 20px; 
+    margin-top: 30px;
+}
+
+.breadcrumb ul {
+
+    list-style:none;
+    margin: 0px;
+}
+
+.breadcrumb ul li {
+
+    display:inline-block;
+    margin: 0px;
+}
+
+.breadcrumb ul li a,
+.breadcrumb ul li span {
+    
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: $breadcrumb_link_color;
+}
+
+.breadcrumb ul li a:hover,
+.breadcrumb ul li a:hover span {
+
+    color: $secondary_color;
+}
+            
+.breadcrumb ul li a:after {
+
+    content: '\f105';
+    font-family: 'fontAwesome';
+    padding: 0 10px;
+}
+
+.breadcrumb ul li a:hover:after {
+    
+    color: $breadcrumb_link_color;
+}
+
+.breadcrumb ul li:first-child a {
+
+    font-size:0;
+}
+
+.breadcrumb ul li:first-child a:before {
+
+    content:"\f015";
+    font-family:'fontAwesome';
+    font-size:16px;
+    padding:0;
+    color:inherit;
+}
+
+.breadcrumb ul li:last-child {
+
+    padding-right:0;
+}
+
+.breadcrumb ul li:last-child span {
+    
+    color:$secondary_color;
+}
+
+.breadcrumb ul li:last-child a {
+
+    color:$secondary_color;
+}
+
+.breadcrumb ul li:last-child a::after {
+
+    content:'';
+    display:none;
+}
+
+.breadcrumb::after {
+
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 11;
+    left: 15px;
+    bottom: -26px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 12px;
+    border-color: transparent transparent rgba(0,0,0,0.03) transparent;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,640 @@
+/*
+ * Stellarnav.js 1.2.0
+ * jQuery responsive multi-level dropdown menu designed to do most of the heavy CSS work for you.
+ * Copyright (c) 2016 Vinny Moreira - http://vinnymoreira.com
+ * Released under the MIT license
+ */
+
+
+/* all nav */
+
+.primary-navigation {
+
+    position: relative;
+    width: 100%;
+    z-index: 9900;
+    line-height: normal;
+}
+
+.primary-navigation ul {
+
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.primary-navigation li {
+
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.primary-navigation li a {
+    
+    display: block;
+    font-size: 15px;
+    padding: 8px 15px;
+    color: #777;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.primary-navigation li.home-btn a {
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.primary-navigation.dark li a:hover {
+
+    color:$secondary_color;
+}
+
+
+
+/* main level */
+
+.primary-navigation>ul>li {
+    display: inline-block;
+}
+
+.primary-navigation>ul>li>a {
+
+    font-size: 1rem;
+    padding: 15px 10px;
+    font-weight: 400;
+}
+
+
+/* Dropdown */
+
+.primary-navigation ul li .sub-menu {
+    
+    display:block;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.primary-navigation ul li:hover > .sub-menu, 
+.primary-navigation ul li:focus > .sub-menu,
+.primary-navigation ul li:focus-within > .sub-menu,
+.primary-navigation ul li .sub-menu:focus-within {
+    
+    clip: auto !important;
+}
+
+/* first level dd */
+
+.primary-navigation ul ul {
+    top: auto;
+    width: 220px;
+    position: absolute;
+    z-index: 9900;
+    text-align: left;
+    display: none;
+    background: #ddd;
+}
+
+.primary-navigation li li {
+    display: block;
+}
+
+
+
+/* second level dd */
+
+.primary-navigation ul ul ul {
+    top: 0;
+    /* dd animtion - change to auto to remove */
+    left: 220px;
+}
+
+.primary-navigation>ul>li:hover>ul>li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+
+
+
+/* .drop-left */
+
+.primary-navigation>ul>li.drop-left>ul {
+    right: 0;
+}
+
+.primary-navigation li.drop-left ul ul {
+    left: auto;
+    right: 220px;
+}
+
+
+
+/* light theme */
+
+.primary-navigation.light {
+    background: rgba(255, 255, 255, 1);
+}
+
+.primary-navigation.light ul ul {
+    background: rgba(255, 255, 255, 1);
+}
+
+.primary-navigation.light li a {
+    color: #000;
+}
+
+.primary-navigation.light .menu-toggle,
+.primary-navigation.light .call-btn-mobile,
+.primary-navigation.light .location-btn-mobile,
+.primary-navigation.light .close-menu {
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+/* dark theme */
+
+.primary-navigation.dark {
+    background: rgba(0, 0, 0, 1);
+}
+
+.primary-navigation.dark ul ul {
+    background: rgba(0, 0, 0, 1);
+}
+
+.primary-navigation.dark li a {
+    color: #FFF;
+}
+
+.primary-navigation.dark .menu-toggle,
+.primary-navigation.dark .call-btn-mobile,
+.primary-navigation.dark .location-btn-mobile,
+.primary-navigation.dark .close-menu {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* sticky nav */
+
+.primary-navigation.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+
+
+/* only used when 'scrollbarFix' is set to true in the js. This fixes horizontal scrollbar caused by the dd menus that are very long.*/
+
+body.primary-navigation-noscroll-x {
+    overflow-x: hidden;
+}
+
+
+
+/* general styling */
+
+.primary-navigation li.has-sub>a:after {
+
+    content: '\f0d7';
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+}
+
+.primary-navigation li li.has-sub>a:after {
+
+    content: '\f0da';
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+}
+
+.primary-navigation li.drop-left li.has-sub>a:after {
+    
+    float: left;
+    content: '\f0d9';
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+}
+
+.primary-navigation.hide-arrows li.has-sub>a:after,
+.primary-navigation.hide-arrows li li.has-sub>a:after,
+.primary-navigation.hide-arrows li.drop-left li.has-sub>a:after {
+    display: none;
+}
+
+.primary-navigation .menu-toggle,
+.primary-navigation .close-menu,
+.primary-navigation .call-btn-mobile,
+.primary-navigation .location-btn-mobile {
+
+    display: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.primary-navigation .dd-toggle {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    z-index: 9999;
+    border: 0;
+}
+
+.primary-navigation .dd-toggle i {
+
+    position: absolute;
+    margin: auto;
+    top: 33%;
+    left: 0;
+    right: 0;
+    -webkit-transition: transform .3s ease-out;
+    -moz-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+
+.primary-navigation.mobile>ul>li>a.dd-toggle {
+    padding: 0;
+    color: #fff;
+}
+
+.primary-navigation li.call-btn-mobile,
+.primary-navigation li.location-btn-mobile {
+    display: none;
+}
+
+.primary-navigation li.open>a.dd-toggle i {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+
+/* mobile nav */
+
+.primary-navigation .menu-toggle,
+.primary-navigation .call-btn-mobile,
+.primary-navigation .location-btn-mobile,
+.primary-navigation .close-menu {
+
+    font-size:24px;
+    color: #777;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.primary-navigation .full {
+    width: 100%;
+}
+
+.primary-navigation .half {
+    width: 50%;
+}
+
+.primary-navigation .third {
+    width: 33%;
+    text-align: center;
+}
+
+.primary-navigation .location-btn-mobile.third {
+    text-align: center;
+}
+
+.primary-navigation .location-btn-mobile.half {
+    text-align: right;
+}
+
+.primary-navigation.light .third,
+.primary-navigation.light .half {
+    border-left: 1px solid rgba(0, 0, 0, .15);
+}
+
+.primary-navigation.light.left .third,
+.primary-navigation.light.left .half {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.primary-navigation.light.right .third,
+.primary-navigation.light.right .half {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.primary-navigation.light .third:first-child,
+.primary-navigation.light .half:first-child {
+    border-left: 0;
+}
+
+.primary-navigation.dark .third,
+.primary-navigation.dark .half {
+    border-left: 1px solid rgba(255, 255, 255, .15);
+}
+
+.primary-navigation.dark.left .third,
+.primary-navigation.dark.left .half {
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.primary-navigation.dark.right .third,
+.primary-navigation.dark.right .half {
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.primary-navigation.light.left .menu-toggle,
+.primary-navigation.light.right .menu-toggle {
+    border-bottom: 0;
+}
+
+.primary-navigation.dark.left .menu-toggle,
+.primary-navigation.dark.right .menu-toggle {
+    border-bottom: 0;
+}
+
+.primary-navigation.dark .third:first-child,
+.primary-navigation.dark .half:first-child {
+    border-left: 0;
+}
+
+.primary-navigation.mobile {
+    position: static;
+}
+
+.primary-navigation.mobile.fixed {
+    position: static;
+}
+
+.primary-navigation.mobile ul {
+    position: relative;
+    display: none;
+}
+
+.primary-navigation.mobile.active {
+    padding-bottom: 0;
+}
+
+.primary-navigation.mobile.active>ul {
+    display: block;
+}
+
+.primary-navigation.mobile ul {
+    text-align: left;
+}
+
+.primary-navigation.mobile>ul>li {
+    display: block;
+}
+
+.primary-navigation.mobile>ul>li>a {
+    padding: 15px;
+}
+
+.primary-navigation.mobile ul {
+    background: rgba(221, 221, 221, 1);
+}
+
+.primary-navigation.mobile ul ul {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    display: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+
+.primary-navigation.mobile ul ul ul {
+    left: auto;
+    top: auto;
+}
+
+.primary-navigation.mobile li.drop-left ul ul {
+    right: auto;
+}
+
+.primary-navigation.mobile li a {
+    border-bottom: 1px solid rgba(41, 41, 41, 0.5);
+}
+
+.primary-navigation.mobile li.has-sub a {
+    padding-right: 50px;
+}
+
+.primary-navigation.mobile>ul {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+.primary-navigation.mobile.light li a {
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.primary-navigation.mobile.light>ul {
+    border-top: 1px solid rgba(0, 0, 0, .15);
+}
+
+.primary-navigation.mobile li a.dd-toggle {
+    border: 0;
+}
+
+.primary-navigation.mobile.light li a.dd-toggle {
+    border: 0;
+}
+
+.primary-navigation.mobile .menu-toggle,
+.primary-navigation.mobile .dd-toggle,
+.primary-navigation.mobile .close-menu,
+.primary-navigation.mobile .call-btn-mobile,
+.primary-navigation.mobile .location-btn-mobile {
+    display: inline-block;
+}
+
+.primary-navigation.mobile li.call-btn-mobile {
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    box-sizing: border-box;
+}
+
+.primary-navigation.mobile li.call-btn-mobile,
+.primary-navigation.mobile li.location-btn-mobile {
+    display: inline-block;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.primary-navigation.mobile li.call-btn-mobile.full,
+.primary-navigation.mobile li.location-btn-mobile.full {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    border-right: 0;
+    text-align: left;
+}
+
+.primary-navigation.mobile li.call-btn-mobile i,
+.primary-navigation.mobile li.location-btn-mobile i {
+    margin-right: 5px;
+}
+
+.primary-navigation.mobile.light ul {
+    background: rgba(255, 255, 255, 1);
+}
+
+.primary-navigation.mobile.dark ul {
+    background: rgba(0, 0, 0, 1);
+}
+
+.primary-navigation.mobile.dark ul ul {
+    background: rgba(255, 255, 255, .08);
+}
+
+.primary-navigation.mobile.light li.call-btn-mobile {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.primary-navigation.mobile.top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.primary-navigation.mobile li.has-sub>a:after,
+.primary-navigation.mobile li li.has-sub>a:after,
+.primary-navigation.mobile li.drop-left li.has-sub>a:after {
+    display: none;
+}
+
+
+
+/* left and right positions */
+
+.primary-navigation.mobile.right>ul,
+.primary-navigation.mobile.left>ul {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 280px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.primary-navigation.mobile.right>ul {
+    right: 0;
+}
+
+.primary-navigation.mobile.right .close-menu,
+.primary-navigation.mobile.left .close-menu {
+    display: inline-block;
+    text-align: right;
+}
+
+.primary-navigation.mobile.left>ul {
+    left: 0;
+}
+
+.primary-navigation.mobile.right .location-btn-mobile.half,
+.primary-navigation.mobile.right .call-btn-mobile.half,
+.primary-navigation.mobile.right .close-menu.half {
+    text-align: center;
+}
+
+.primary-navigation.mobile.right .location-btn-mobile.third,
+.primary-navigation.mobile.right .call-btn-mobile.third,
+.primary-navigation.mobile.right .close-menu.third {
+    text-align: center;
+}
+
+.primary-navigation.mobile.left .location-btn-mobile.half,
+.primary-navigation.mobile.left .call-btn-mobile.half,
+.primary-navigation.mobile.left .close-menu.half {
+    text-align: center;
+}
+
+.primary-navigation.mobile.left .location-btn-mobile.third,
+.primary-navigation.mobile.left .call-btn-mobile.third,
+.primary-navigation.mobile.left .close-menu.third {
+    text-align: center;
+}
+
+.primary-navigation.mobile.left .menu-toggle.half,
+.primary-navigation.mobile.left .menu-toggle.third,
+.primary-navigation.mobile.right .menu-toggle.half,
+.primary-navigation.mobile.right .menu-toggle.third {
+    text-align: left;
+}
+
+.primary-navigation.mobile.left .close-menu.third span,
+.primary-navigation.mobile.right .close-menu.third span {
+    display: none;
+}
+
+/* Menu Description */
+
+.primary-navigation ul li a span.menu-item-description {
+    
+    display: inline;
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 7px;
+    padding: 0px 5px 1px 5px;
+    background-color: $third_color;
+    line-height: 1;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius: 2px;
+}
+
+/* Fallback for slow javascript load */
+
+@media(max-width: 991px) {
+    .general-header .sticky-wrapper .primary-navigation.mobile > ul {
+        height: 400px;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .primary-navigation {
+        overflow: hidden;
+        display: block;
+    }
+    .general-header .sticky-wrapper .primary-navigation.mobile > ul {
+        height: 300px;
+    }
+    .primary-navigation ul {
+        position: relative;
+        display: none;
+    }
+}
+
+
+
+/* mobile nav */
+
+@media only screen and (max-width: 420px) {
+
+    .primary-navigation.mobile .call-btn-mobile.third span,
+    .primary-navigation.mobile .location-btn-mobile.third span {
+        display: none;
+    }
+}

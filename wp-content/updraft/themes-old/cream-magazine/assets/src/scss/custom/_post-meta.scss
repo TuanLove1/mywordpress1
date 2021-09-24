@@ -1,0 +1,141 @@
+
+/** Category Meta **/
+
+.entry_cats {
+	
+	margin-bottom: 10px;
+}
+
+.entry_cats ul.post-categories {
+	
+	list-style: none;
+	margin: 0px;
+}
+
+.entry_cats ul.post-categories li {
+	
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.entry_cats ul.post-categories li a {
+	
+	display: inline-block;
+    color: $white;
+    font-size: 13px;
+    background-color: $secondary_color;
+    padding: 4px 10px;
+    border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+    -moz-border-radius: 2px;
+    line-height: 1;
+}
+
+.entry_cats ul.post-categories li a:hover {
+	
+	color: $white;
+    background-color: $primary_color;
+}
+
+
+/** Author, Date, and Comments Meta **/
+
+.cm-post-meta {
+	
+	margin-top: 5px;
+}
+
+ul.post_meta {
+	
+	list-style: none;
+	margin: 0px;
+}
+
+ul.post_meta li {
+	
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+}
+
+ul.post_meta li a {
+	
+	color: $auth_date_cmnt_color;
+	font-size: 14px;
+	@include transation_delay();
+}
+
+ul.post_meta li a {
+	
+	display: inline-block;
+}
+
+ul.post_meta li a:hover {
+	
+	color: $secondary_color;
+	@include transation_delay();
+}
+
+ul.post_meta li a::before {
+	
+	font-family: 'feather';
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+ul.post_meta li.post_author a::before {
+	
+	content: '\e8e9';
+}
+
+ul.post_meta li.posted_date a::before {
+	
+	content: '\e83a';
+}
+
+ul.post_meta li.comments a::before {
+	
+	content: '\e891';
+}
+
+ul.post_meta li.entry_cats {
+	color: $auth_date_cmnt_color;
+}
+
+ul.post_meta li.entry_cats::before {
+	font-family: 'feather';
+	font-size: 14px;
+	margin-right: 5px;
+	content: '\e90d';
+}
+
+
+
+/** Tag Meta **/
+
+.post_tags a {
+
+    display:inline-block;
+    font-size: 14px;
+    background-color: $secondary_color;
+    padding: 4px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: $white;
+    text-transform: capitalize;
+}
+
+.post_tags a::before {
+
+    content:'\e8d2';
+    font-family: 'feather';
+    margin-right: 5px;
+}
+
+.post_tags a:hover {
+
+    background-color: $primary_color;
+    color: $white;
+}
