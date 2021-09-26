@@ -1,0 +1,113 @@
+0000.021 () Opened log file at time: Mon, 13 Sep 2021 01:13:27 +0000 on http://localhost:7000/myproject/wordpress
+0000.023 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.61 WP: 5.8.1 PHP: 8.0.9 (apache2handler, Windows NT LAPTOP-NAL5E60R 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.20-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.9 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 41.7M | 6M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.023 () Free space on disk containing Updraft's temporary directory: 10171.5 MB
+0000.080 () Restore setup, now closing connection and starting restore over AJAX.
+0000.018 () Opened log file at time: Mon, 13 Sep 2021 01:13:28 +0000 on http://localhost:7000/myproject/wordpress
+0000.019 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.61 WP: 5.8.1 PHP: 8.0.9 (apache2handler, Windows NT LAPTOP-NAL5E60R 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.20-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.9 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 39.8M | 6M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.019 () Free space on disk containing Updraft's temporary directory: 10171.2 MB
+0000.047 () Ensuring WP_Filesystem is setup for a restore
+0000.053 () WP_Filesystem is setup and ready for a restore
+0000.061 () Restore job started. Entities to restore: others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_wpfront_ure_login_redirect","wp_wpfront_ure_options"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.067 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.075 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.079 () Entity: db
+0000.079 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-db.gz, type=db, info=a:0:{}, last_one=)
+0000.080 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-db.gz, 0 Mb)
+0000.080 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.083 () Database successfully unpacked
+0000.085 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.091 () Using direct MySQL access; value of use_mysqli is: 1
+0000.091 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.205 () Max packet size: 32 MB
+0000.205 () Entering maintenance mode
+0000.205 () Bật chế độ Bảo trì&#8230;
+0000.255 () Backup of: http://localhost:7000/myproject/wordpress
+0000.256 () Content URL: http://localhost:7000/myproject/wordpress/wp-content
+0000.256 () Uploads URL: http://localhost:7000/myproject/wordpress/wp-content/uploads
+0000.256 () Old table prefix: wp_
+0000.256 () Site information: multisite=0
+0000.256 () Site information: sql_mode=NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.258 () New table prefix: q4_
+0000.262 () Processing table (InnoDB): wp_options - will restore as: q4_options
+0000.336 () Atomic restore: dropping original table (wp_options)
+0000.349 () Atomic restore: renaming new table (q4_options) to final table name (wp_options)
+0000.363 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.384 () Processing table (InnoDB): wp_users - will restore as: q4_users
+0000.435 () Atomic restore: dropping original table (wp_users)
+0000.449 () Atomic restore: renaming new table (q4_users) to final table name (wp_users)
+0000.462 () Processing table (InnoDB): wp_usermeta - will restore as: q4_usermeta
+0000.511 () Atomic restore: dropping original table (wp_usermeta)
+0000.530 () Atomic restore: renaming new table (q4_usermeta) to final table name (wp_usermeta)
+0000.545 () Processing table (InnoDB): wp_commentmeta - will restore as: q4_commentmeta
+0000.591 () Atomic restore: dropping original table (wp_commentmeta)
+0000.606 () Atomic restore: renaming new table (q4_commentmeta) to final table name (wp_commentmeta)
+0000.622 () Processing table (InnoDB): wp_comments - will restore as: q4_comments
+0000.682 () Atomic restore: dropping original table (wp_comments)
+0000.695 () Atomic restore: renaming new table (q4_comments) to final table name (wp_comments)
+0000.712 () Processing table (InnoDB): wp_links - will restore as: q4_links
+0000.749 () Atomic restore: dropping original table (wp_links)
+0000.764 () Atomic restore: renaming new table (q4_links) to final table name (wp_links)
+0000.779 () Processing table (InnoDB): wp_postmeta - will restore as: q4_postmeta
+0000.830 () Atomic restore: dropping original table (wp_postmeta)
+0000.842 () Atomic restore: renaming new table (q4_postmeta) to final table name (wp_postmeta)
+0000.855 () Processing table (InnoDB): wp_posts - will restore as: q4_posts
+0000.926 () Atomic restore: dropping original table (wp_posts)
+0000.940 () Atomic restore: renaming new table (q4_posts) to final table name (wp_posts)
+0000.956 () Processing table (InnoDB): wp_term_relationships - will restore as: q4_term_relationships
+0001.003 () Atomic restore: dropping original table (wp_term_relationships)
+0001.014 () Atomic restore: renaming new table (q4_term_relationships) to final table name (wp_term_relationships)
+0001.028 () Processing table (InnoDB): wp_term_taxonomy - will restore as: q4_term_taxonomy
+0001.080 () Atomic restore: dropping original table (wp_term_taxonomy)
+0001.093 () Atomic restore: renaming new table (q4_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.106 () Processing table (InnoDB): wp_termmeta - will restore as: q4_termmeta
+0001.146 () Atomic restore: dropping original table (wp_termmeta)
+0001.158 () Atomic restore: renaming new table (q4_termmeta) to final table name (wp_termmeta)
+0001.173 () Processing table (InnoDB): wp_terms - will restore as: q4_terms
+0001.220 () Atomic restore: dropping original table (wp_terms)
+0001.232 () Atomic restore: renaming new table (q4_terms) to final table name (wp_terms)
+0001.246 () Processing table (InnoDB): wp_wpfront_ure_login_redirect - will restore as: q4_wpfront_ure_login_redirect
+0001.281 () Atomic restore: dropping original table (wp_wpfront_ure_login_redirect)
+0001.294 () Atomic restore: renaming new table (q4_wpfront_ure_login_redirect) to final table name (wp_wpfront_ure_login_redirect)
+0001.337 () Processing table (InnoDB): wp_wpfront_ure_options - will restore as: q4_wpfront_ure_options
+0001.395 () Unlocking database and leaving maintenance mode
+0001.396 () Vô hiệu hóa chế độ bảo trì&#8230;
+0001.396 () Atomic restore: dropping original table (wp_wpfront_ure_options)
+0001.412 () Atomic restore: renaming new table (q4_wpfront_ure_options) to final table name (wp_wpfront_ure_options)
+0001.425 () Finished: lines processed: 47 in 1.33 seconds
+0001.426 () Cleaning up rubbish...
+0001.439 () Entity: others
+0001.439 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip, type=others, info=a:2:{s:4:"path";s:46:"C:\xampp\htdocs\myproject\wordpress/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0001.440 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip, 0.7 MB)
+0001.442 () Unzipping backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip to C:/xampp/htdocs/myproject/wordpress/wp-content/upgrade/0e8e8901/ using UpdraftPlus_ZipArchive, starting index 0
+0001.602 () Unzip progress: 75 out of 75 files (2.7 MB, languages/vi.po)
+0001.607 () PHP event: code E_WARNING: rename(C:/xampp/htdocs/myproject/wordpress/wp-content/languages,C:/xampp/htdocs/myproject/wordpress/wp-content/languages-old): Access is denied (code: 5) (line 335, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0001.607 () PHP event: code E_WARNING: copy(): The first argument to copy() function cannot be a directory (line 309, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0001.609 () Error message: Could not move old files out of the way. You should check the file ownerships and permissions in your WordPress installation (C:/xampp/htdocs/myproject/wordpress/wp-content/languages)
+0001.611 () Restore failed...
+0001.611 () Error message: Could not move old files out of the way. You should check the file ownerships and permissions in your WordPress installation (C:/xampp/htdocs/myproject/wordpress/wp-content/languages)
+0001.611 () Restore failed
+0000.018 () Opened log file at time: Mon, 13 Sep 2021 01:22:54 +0000 on http://localhost:7000/myproject/wordpress
+0000.019 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.61 WP: 5.8.1 PHP: 8.0.9 (apache2handler, Windows NT LAPTOP-NAL5E60R 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.20-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.9 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 41.7M | 8M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.020 () Free space on disk containing Updraft's temporary directory: 10168.3 MB
+0000.063 () Restore setup, now closing connection and starting restore over AJAX.
+0000.015 () Opened log file at time: Mon, 13 Sep 2021 01:22:55 +0000 on http://localhost:7000/myproject/wordpress
+0000.016 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.61 WP: 5.8.1 PHP: 8.0.9 (apache2handler, Windows NT LAPTOP-NAL5E60R 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.20-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.9 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 39.8M | 6M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.016 () Free space on disk containing Updraft's temporary directory: 10168.1 MB
+0000.039 () Ensuring WP_Filesystem is setup for a restore
+0000.045 () WP_Filesystem is setup and ready for a restore
+0000.050 () Restore job started. Entities to restore: others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_wpfront_ure_login_redirect","wp_wpfront_ure_options"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.054 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.060 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.060 () Entity: others
+0000.060 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip, type=others, info=a:2:{s:4:"path";s:46:"C:\xampp\htdocs\myproject\wordpress/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0000.061 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip, 0.7 MB)
+0000.062 () Unpack resumption may be possible: zip_starting_index=74, last_exists=1, last_size=664817, last_status=a:3:{s:5:"index";i:74;s:4:"info";a:8:{s:4:"name";s:15:"languages/vi.po";s:5:"index";i:74;s:3:"crc";i:1338615848;s:4:"size";i:664817;s:5:"mtime";i:1631492816;s:9:"comp_size";i:136903;s:11:"comp_method";i:8;s:17:"encryption_method";i:0;}s:12:"size_written";i:2832591;}
+0000.063 () Unzipping backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip to C:/xampp/htdocs/myproject/wordpress/wp-content/upgrade/0e8e8901/ using UpdraftPlus_ZipArchive, starting index 74
+0000.064 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.073 () Unzip progress: 75 out of 75 files (649.2 KB, languages/vi.po)
+0000.077 () PHP event: code E_WARNING: rename(C:/xampp/htdocs/myproject/wordpress/wp-content/languages,C:/xampp/htdocs/myproject/wordpress/wp-content/languages-old): Access is denied (code: 5) (line 335, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.077 () PHP event: code E_WARNING: copy(): The first argument to copy() function cannot be a directory (line 309, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.078 () Error message: Could not move old files out of the way. You should check the file ownerships and permissions in your WordPress installation (C:/xampp/htdocs/myproject/wordpress/wp-content/languages)
+0000.080 () Restore failed...
+0000.080 () Error message: Could not move old files out of the way. You should check the file ownerships and permissions in your WordPress installation (C:/xampp/htdocs/myproject/wordpress/wp-content/languages)
+0000.080 () Restore failed

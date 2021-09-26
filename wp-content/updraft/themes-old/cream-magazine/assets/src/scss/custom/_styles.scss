@@ -1,0 +1,364 @@
+/* Site Description */
+
+.site-description {
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*
+***************************************************************
+*
+* 2. Common classes used in project
+*
+***************************************************************
+*/
+
+
+// Container 
+
+.cm-container {
+
+    position: relative;
+    max-width: 1170px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.row-reverse {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row-reverse;
+}
+
+
+// boxed layout ( condition )
+
+.page-wrapper {
+    
+    position:relative;
+    z-index:2;
+    background:$white;
+    margin:0 auto;
+}
+
+body.boxed .page-wrapper {
+    
+    max-width: 1170px;
+    width: 100%;
+}
+
+
+body.boxed .page-wrapper .cm-container {
+
+    padding-left:40px;
+    padding-right:40px;
+}
+
+
+// General page styles 
+
+.page_entry {
+
+    margin-bottom:40px;
+}
+
+
+// Custom row & Col 
+
+.custom_row {
+
+    margin-left: -15px;
+    margin-right:-15px;
+}
+
+.custom_row::before {
+
+    content:'';
+    display:table;
+}
+
+.custom_row::after {
+
+    content:'';
+    clear:both;
+}
+
+.col {
+    
+    float:left;
+    width:50%;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+
+// mask 
+
+.mask {
+ 
+    @include mask();
+}
+
+
+
+
+// Cards & box
+
+.card_content, 
+.box_content {
+
+    padding: 30px 20px;
+}
+
+.card,
+.box {
+
+    position: relative;
+    margin-bottom:30px;
+}
+
+
+// Section styles
+
+
+.section_spacing {
+
+    margin-bottom: 50px;
+}
+
+.section-title {
+
+    position:relative;
+    margin-bottom: 25px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.section-title h1,
+.section-title h2 {
+    
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    
+    display: inline-block;
+    font-size: $typo_medium;
+    font-weight: bold;
+    position: relative; 
+    width: 100%; 
+    margin: 0px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    margin-left: 15px;
+    background-color: $secondary_color;
+}
+
+
+/* Global Owl Carousel Options */
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    margin: 0 2px;
+    background:$secondary_color;
+    text-align: center;
+    @include transation_delay();
+    color: $white;
+}
+
+/* Owl Carousel issue at mobile scrolling */
+
+.owl-carousel .owl-stage, 
+.owl-carousel.owl-drag .owl-item {
+
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
+.owl-carousel .owl-item .owl-lazy:not([src]), 
+.owl-carousel .owl-item .owl-lazy[src^=""] {
+
+    max-height: inherit;
+}
+
+
+/* Image Holder */
+
+.post_thumb {
+    
+    position: relative;
+} 
+
+.post_thumb figure {
+    
+    margin: 0px;
+}
+
+
+/* Image Hover Animation */
+
+.imghover img {
+    
+    @include transation_delay;
+}
+
+.imghover {
+
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.imghover:hover img  {
+
+   @include scale();
+}
+
+
+
+/* Lazy Load CSS */
+
+.image-holder {
+
+    display: block;
+    position: relative;
+    height: 0;
+    animation-name: background-loading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .8) 50%, hsla(0, 0%, 100%, 0)), linear-gradient(#e5e5e5 100%, transparent 0);
+    background-size: 99% 100%, cover;
+}
+
+.image-holder img {
+
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+.image-holder img.lazy-image {
+    
+    visibility: hidden;
+}
+
+
+/*
+***************************************************************
+*
+* 5. Front-page news widgets
+*
+***************************************************************
+*/
+
+
+
+// Default styling for news front page news widgets 
+
+
+.edit-link {
+    
+    margin-bottom: 30px;
+}
+
+.banner-area {
+
+    margin-bottom: 40px;
+}
+
+.news-area {
+    
+    margin-bottom: 15px;
+}
+
+.news-area .widget {
+    
+    margin-bottom: 30px;
+}
+
+.news-area .sidebar-widget-area .widget:last-child {
+        
+    margin-bottom: 30px;
+}
+
+.news-area .widget.widget_media_image a {
+    
+    text-align: center;
+    display: block;
+}
+
+
+// Custom html widgets in Front-page 
+
+
+.top-news-area .widget_custom_html,
+.middle-news-area .widget_custom_html,
+.bottom-news-area .widget_custom_html   {
+
+    margin-bottom:30px;
+}
+
+.top-news-area .widget_custom_html .custom-html-widget img,
+.middle-news-area .widget_custom_html .custom-html-widget img,
+.bottom-news-area  .widget_custom_html .custom-html-widget img {
+
+    padding: 0;
+    display:inline-block;
+    margin:0 auto;
+}
+
+
+.blog-container,
+.single-container,
+.page-container,
+.archive-container,
+.search-container,
+.woocommerce-container {
+    
+    padding: 30px 0px;
+}
+
+.blog-container .content-entry,
+.single-container .content-entry,
+.page-container .content-entry,
+.archive-container .content-entry,
+.search-container .content-entry,
+.woocommerce-container .content-entry {
+    
+    margin-top: 0px;
+}
+
+.single-container .content-entry,
+.page-container .content-entry {
+    
+    margin-bottom: 40px;
+}
+
+
+.boxes_holder .hentry {
+    
+    margin-bottom: 0px;
+}

@@ -1,0 +1,120 @@
+0000.019 () Opened log file at time: Mon, 13 Sep 2021 00:57:05 +0000 on http://localhost:7000/myproject/wordpress
+0000.019 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.61 WP: 5.8.1 PHP: 8.0.9 (apache2handler, Windows NT LAPTOP-NAL5E60R 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.20-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.9 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 41.7M | 6M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.020 () Free space on disk containing Updraft's temporary directory: 10270.6 MB
+0000.083 () Restore setup, now closing connection and starting restore over AJAX.
+0000.022 () Opened log file at time: Mon, 13 Sep 2021 00:57:07 +0000 on http://localhost:7000/myproject/wordpress
+0000.023 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.61 WP: 5.8.1 PHP: 8.0.9 (apache2handler, Windows NT LAPTOP-NAL5E60R 10.0 build 18363 (Windows 10) AMD64) MySQL: 10.4.20-MariaDB (max packet size=33554432) WPLANG: vi Server: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.9 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 40.1M | 10M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.023 () Free space on disk containing Updraft's temporary directory: 10270.2 MB
+0000.062 () Ensuring WP_Filesystem is setup for a restore
+0000.066 () WP_Filesystem is setup and ready for a restore
+0000.082 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_wpfront_ure_login_redirect","wp_wpfront_ure_options"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.089 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.114 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.119 () Entity: db
+0000.119 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-db.gz, type=db, info=a:0:{}, last_one=)
+0000.120 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-db.gz, 0 Mb)
+0000.120 () PHP event: code E_WARNING: mkdir(): File exists (line 545, C:\xampp\htdocs\myproject\wordpress\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.123 () Database successfully unpacked
+0000.124 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.129 () Using direct MySQL access; value of use_mysqli is: 1
+0000.130 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.245 () Max packet size: 32 MB
+0000.245 () Entering maintenance mode
+0000.245 () Bật chế độ Bảo trì&#8230;
+0000.293 () Backup of: http://localhost:7000/myproject/wordpress
+0000.294 () Content URL: http://localhost:7000/myproject/wordpress/wp-content
+0000.295 () Uploads URL: http://localhost:7000/myproject/wordpress/wp-content/uploads
+0000.295 () Old table prefix: wp_
+0000.295 () Site information: multisite=0
+0000.295 () Site information: sql_mode=NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.296 () New table prefix: 0g_
+0000.302 () Processing table (InnoDB): wp_options - will restore as: 0g_options
+0000.361 () Atomic restore: dropping original table (wp_options)
+0000.375 () Atomic restore: renaming new table (0g_options) to final table name (wp_options)
+0000.389 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.410 () Processing table (InnoDB): wp_users - will restore as: 0g_users
+0000.466 () Atomic restore: dropping original table (wp_users)
+0000.480 () Atomic restore: renaming new table (0g_users) to final table name (wp_users)
+0000.496 () Processing table (InnoDB): wp_usermeta - will restore as: 0g_usermeta
+0000.548 () Atomic restore: dropping original table (wp_usermeta)
+0000.561 () Atomic restore: renaming new table (0g_usermeta) to final table name (wp_usermeta)
+0000.576 () Processing table (InnoDB): wp_commentmeta - will restore as: 0g_commentmeta
+0000.627 () Atomic restore: dropping original table (wp_commentmeta)
+0000.640 () Atomic restore: renaming new table (0g_commentmeta) to final table name (wp_commentmeta)
+0000.654 () Processing table (InnoDB): wp_comments - will restore as: 0g_comments
+0000.714 () Atomic restore: dropping original table (wp_comments)
+0000.727 () Atomic restore: renaming new table (0g_comments) to final table name (wp_comments)
+0000.741 () Processing table (InnoDB): wp_links - will restore as: 0g_links
+0000.779 () Atomic restore: dropping original table (wp_links)
+0000.791 () Atomic restore: renaming new table (0g_links) to final table name (wp_links)
+0000.807 () Processing table (InnoDB): wp_postmeta - will restore as: 0g_postmeta
+0000.861 () Atomic restore: dropping original table (wp_postmeta)
+0000.874 () Atomic restore: renaming new table (0g_postmeta) to final table name (wp_postmeta)
+0000.889 () Processing table (InnoDB): wp_posts - will restore as: 0g_posts
+0000.971 () Atomic restore: dropping original table (wp_posts)
+0000.983 () Atomic restore: renaming new table (0g_posts) to final table name (wp_posts)
+0001.001 () Processing table (InnoDB): wp_term_relationships - will restore as: 0g_term_relationships
+0001.056 () Atomic restore: dropping original table (wp_term_relationships)
+0001.069 () Atomic restore: renaming new table (0g_term_relationships) to final table name (wp_term_relationships)
+0001.084 () Processing table (InnoDB): wp_term_taxonomy - will restore as: 0g_term_taxonomy
+0001.138 () Atomic restore: dropping original table (wp_term_taxonomy)
+0001.152 () Atomic restore: renaming new table (0g_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.166 () Processing table (InnoDB): wp_termmeta - will restore as: 0g_termmeta
+0001.211 () Atomic restore: dropping original table (wp_termmeta)
+0001.226 () Atomic restore: renaming new table (0g_termmeta) to final table name (wp_termmeta)
+0001.243 () Processing table (InnoDB): wp_terms - will restore as: 0g_terms
+0001.294 () Atomic restore: dropping original table (wp_terms)
+0001.307 () Atomic restore: renaming new table (0g_terms) to final table name (wp_terms)
+0001.322 () Processing table (InnoDB): wp_wpfront_ure_login_redirect - will restore as: 0g_wpfront_ure_login_redirect
+0001.360 () Atomic restore: dropping original table (wp_wpfront_ure_login_redirect)
+0001.372 () Atomic restore: renaming new table (0g_wpfront_ure_login_redirect) to final table name (wp_wpfront_ure_login_redirect)
+0001.386 () Processing table (InnoDB): wp_wpfront_ure_options - will restore as: 0g_wpfront_ure_options
+0001.430 () Unlocking database and leaving maintenance mode
+0001.430 () Vô hiệu hóa chế độ bảo trì&#8230;
+0001.431 () Atomic restore: dropping original table (wp_wpfront_ure_options)
+0001.443 () Atomic restore: renaming new table (0g_wpfront_ure_options) to final table name (wp_wpfront_ure_options)
+0001.457 () Finished: lines processed: 47 in 1.33 seconds
+0001.458 () Cleaning up rubbish...
+0001.471 () Entity: plugins
+0001.471 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:54:"C:\xampp\htdocs\myproject\wordpress/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0001.472 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-plugins.zip, 7 MB)
+0001.474 () Unzipping backup_2021-09-13-0051_My_Wordpress_63718a523835-plugins.zip to C:/xampp/htdocs/myproject/wordpress/wp-content/upgrade/df33d549/ using UpdraftPlus_ZipArchive, starting index 0
+0003.411 () Unzip progress: 1002 out of 1893 files (18.5 MB, plugins/updraftplus/vendor/aws/aws-sdk-php/src/Aws/S3/Exception/InvalidArgumentException.php)
+0008.348 () Unzip progress: 1893 out of 1893 files (23.8 MB, plugins/wpfront-user-role-editor/wpfront-user-role-editor.php)
+0008.365 () Moving old data: filesystem method / updraft_dir is potentially possible
+0008.365 () Moving old data: can potentially use wp_filesystem method / -old
+0008.365 () Moving old data out of the way...
+0009.111 () Top-level entities being moved: akismet, hello.php, highlighting-code-block, index.php, tinymce-advanced, updraftplus, wpfront-user-role-editor
+0009.139 () Moving unpacked backup into place...
+0010.027 () Top-level entities being moved: akismet, hello.php, highlighting-code-block, index.php, tinymce-advanced, updraftplus, wpfront-user-role-editor
+0010.049 () Cleaning up rubbish...
+0010.072 () Entity: themes
+0010.072 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-themes.zip, type=themes, info=a:2:{s:4:"path";s:53:"C:\xampp\htdocs\myproject\wordpress/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0010.074 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-themes.zip, 6.6 MB)
+0010.075 () Unzipping backup_2021-09-13-0051_My_Wordpress_63718a523835-themes.zip to C:/xampp/htdocs/myproject/wordpress/wp-content/upgrade/1bf556f5/ using UpdraftPlus_ZipArchive, starting index 0
+0011.691 () Unzip progress: 726 out of 726 files (11.4 MB, themes/twentytwentyone/template-parts/post/author-bio.php)
+0011.707 () Moving old data: filesystem method / updraft_dir is potentially possible
+0011.708 () Moving old data: can potentially use wp_filesystem method / -old
+0011.708 () Moving old data out of the way...
+0012.537 () Top-level entities being moved: cream-magazine, index.php, twentynineteen, twentysixteen, twentytwenty, twentytwentyone
+0012.559 () Moving unpacked backup into place...
+0012.961 () Top-level entities being moved: cream-magazine, index.php, twentynineteen, twentysixteen, twentytwenty, twentytwentyone
+0012.984 () Cleaning up rubbish...
+0013.025 () Entity: uploads
+0013.025 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:54:"C:\xampp\htdocs\myproject\wordpress/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0013.026 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-uploads.zip, 21.4 MB)
+0013.027 () Unzipping backup_2021-09-13-0051_My_Wordpress_63718a523835-uploads.zip to C:/xampp/htdocs/myproject/wordpress/wp-content/upgrade/4411f485/ using UpdraftPlus_ZipArchive, starting index 0
+0013.146 () Unzip progress: 20 out of 20 files (21.4 MB, uploads/2021/09/video-1630062110.mp4)
+0013.148 () Moving old data: filesystem method / updraft_dir is potentially possible
+0013.151 () Moving old data: can potentially use wp_filesystem method / -old
+0013.151 () Moving old data out of the way...
+0013.159 () Moving unpacked backup into place...
+0013.169 () Cleaning up rubbish...
+0013.181 () Entity: others
+0013.181 () restore_backup(backup_file=backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip, type=others, info=a:2:{s:4:"path";s:46:"C:\xampp\htdocs\myproject\wordpress/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0013.182 () Unpacking backup... (backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip, 0.7 MB)
+0013.184 () Unzipping backup_2021-09-13-0051_My_Wordpress_63718a523835-others.zip to C:/xampp/htdocs/myproject/wordpress/wp-content/upgrade/0e8e8901/ using UpdraftPlus_ZipArchive, starting index 0
+0013.357 () Unzip progress: 75 out of 75 files (2.7 MB, languages/vi.po)
+0013.369 () Cleaning up rubbish...
+0013.463 () Restore successful!
+0013.464 () Restore successful

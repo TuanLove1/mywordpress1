@@ -1,0 +1,142 @@
+
+.the_content a.wp-block-button__link {
+
+    color:inherit;
+    text-decoration: none;
+}
+
+.wp-block-button,
+.wp-block-pullquote,
+.wp-block-media-text {
+
+    margin-bottom: 1.5em;
+}
+
+.wp-block-latest-posts__post-date,
+.wp-block-latest-comments__comment-date {
+
+    color: #6f6f6f;
+}
+
+.wp-block-latest-posts.is-grid {
+
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.wp-block-categories-list.aligncenter {
+
+    text-align: center;
+}
+
+.blocks-gallery-caption {
+
+    width: 100%;
+}
+
+.wp-block-search,
+.wp-block-gallery {
+
+    margin-bottom: 1.5em;
+}
+
+.wp-block-cover {
+
+    margin-bottom: 1.5em;
+}
+
+.wp-block-pullquote__citation, 
+.wp-block-pullquote cite, 
+.wp-block-pullquote footer {
+
+    color:inherit;
+}
+
+// spacing
+
+.the_content .alignleft,
+.the_content .alignright {
+    
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.the_content .alignleft {
+
+    margin-right:30px;
+}
+
+.the_content .alignright {
+
+    margin-left:30px;
+}
+
+.wp-block-embed.alignleft, 
+.wp-block-embed.alignright,
+.block-editor-block-list__block[data-type="core/embed"][data-align=left] .block-editor-block-list__block-edit, 
+.block-editor-block-list__block[data-type="core/embed"][data-align=right] .block-editor-block-list__block-edit {
+
+    max-width:50%;
+}
+
+// table 
+
+.wp-block-table td, 
+.wp-block-table th {
+
+    border-color:#eeeeee;
+    border-width: 0 1px 1px 0;
+}
+
+// image & gallery
+
+.wp-block-image figcaption {
+    
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.wp-block-gallery {
+
+    margin-bottom:30px;
+}
+
+// embeds 
+
+.wp-block-embed {
+
+    margin-bottom:30px;
+}
+
+.wp-block-embed.alignleft iframe, 
+.wp-block-embed.alignright iframe {
+
+    @include border-radius(5px);
+    overflow:hidden;
+}
+
+
+// gallery 
+
+.blocks-gallery-grid, 
+.wp-block-gallery {
+    
+    padding:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+
+// responsive 
+
+@media(max-width: 575px) {
+
+    .wp-block-embed.alignleft, 
+    .wp-block-embed.alignright, 
+    .block-editor-block-list__block[data-type="core/embed"][data-align=left] .block-editor-block-list__block-edit, 
+    .block-editor-block-list__block[data-type="core/embed"][data-align=right] .block-editor-block-list__block-edit {
+    
+        max-width:100%;
+    }
+}
+
