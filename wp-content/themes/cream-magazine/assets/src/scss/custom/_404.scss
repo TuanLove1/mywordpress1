@@ -1,0 +1,47 @@
+.error_page {
+
+    text-align:center;
+    margin-top:70px;
+    margin-bottom: 50px;
+}
+
+.error_page #search-form {
+    
+    width: 60%;
+    margin: auto;
+}
+
+.error_page_top_portion {
+
+    background: $secondary_color;
+    padding: 60px 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.error_head h3 {
+    
+    position:relative;
+    font-weight: 900;
+    font-size: 93px;
+    color: $white;
+    margin-bottom: 0;
+}
+
+.error_head h4 {
+
+    position:relative;
+    font-size: 18px;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.error_body {
+
+   margin-top:20px;
+}
+
+.error_body p {
+
+    color:$white;
+}

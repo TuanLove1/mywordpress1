@@ -1,0 +1,498 @@
+/*
+Theme Name: Hello Fashion
+Theme URI: https://blossomthemes.com/wordpress-themes/hello-fashion/
+Template: vilva  
+Author: Blossom Themes
+Author URI: https://blossomthemes.com/
+Description: Hello Fashion is an easy to use and mobile-friendly WordPress theme for professional bloggers. With Hello Fashion, you can create a website of different niches such as fashion, travel, lifestyle, beauty, recipes, makeup, journal, mom blog, coaching and much more. You can also choose from unlimited colors and 900+ Google Fonts to change your site look and feel with a single click. In addition, you can flaunt your Instagram posts and increase your followers. The newsletter integration will help you grow your email list and stay in touch with your readers. Hello Fashion is SEO-friendly, speed optimized, translation ready, RTL ready and WooCommerce compatible. Check demo at https://blossomthemes.com/theme-demo/?theme=hello-fashion, read the documentation at https://docs.blossomthemes.com/hello-fashion/, and get support at https://blossomthemes.com/support-ticket/.
+Version: 1.0.1
+Liicense: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tested up to: 5.5
+Requires PHP: 5.6
+Text Domain: hello-fashion
+Tags: blog,one-column,two-columns,right-sidebar,left-sidebar,footer-widgets,custom-background,custom-header,custom-menu,custom-logo,featured-images,threaded-comments,full-width-template,rtl-language-support,translation-ready,theme-options,photography,e-commerce
+*/
+
+.site-main .entry-content h1, 
+.site-main .entry-content h2, 
+.site-main .entry-content h3, 
+.site-main .entry-content h4, 
+.site-main .entry-content h5, 
+.site-main .entry-content h6 {
+	font-family: var(--secondary-font);
+	font-weight: 700;
+}
+
+.site-main .entry-content h1 {
+	font-size: 2.45em;
+}
+
+.site-main .entry-content h2 {
+	font-size: 2.11em;
+}
+
+.site-main .entry-content h3 {
+	font-size: 1.67em;
+}
+
+.site-main .entry-content h4 {
+	font-size: 1.33em;
+}
+
+.site-main .entry-content h5 {
+	font-size: 1.11em;
+}
+
+.site-main .entry-content h6 {
+	font-size: 0.89em;
+}
+
+/*=========================
+HEADER STYLE TEN
+=========================*/
+.site-header.style-two {
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	margin-bottom: 20px;
+}
+
+.site-header.style-two .header-t {
+	background: none;
+}
+
+.site-header.style-two .header-bottom {
+	border-bottom: none;
+}
+
+.site-header.style-two .container {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	padding: 0 3%;
+}
+
+.site-header.style-two .secondary-menu, 
+.site-header.style-two .right {
+    flex: 1;
+    display: flex !important;
+}
+
+.style-two .secondary-menu .toggle-btn {
+	display: inline-block;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	background: none;
+	border: none;
+	position: relative;
+	cursor: pointer;
+}
+
+.style-two .secondary-menu .toggle-btn .toggle-bar {
+	background: #333;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	-webkit-transition: all ease 0.35s;
+	-moz-transition: all ease 0.35s;
+	transition: all ease 0.35s;
+}
+
+.style-two .secondary-menu .toggle-btn .toggle-bar:first-child {
+	top: -12px;
+}
+
+.style-two .secondary-menu .toggle-btn .toggle-bar:last-child {
+	bottom: -12px;
+}
+
+.style-two .secondary-menu .toggle-btn:hover .toggle-bar {
+	background: var(--primary-color);
+}
+
+.style-two .secondary-menu .secondary-menu-list {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 320px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	z-index: 999;
+	overflow: hidden;
+    /* padding-top: 80px; */
+    display: none;
+}
+
+.style-two .secondary-menu .mobile-menu {
+    width: 320px;
+    height: calc(100% - 80px) !important;
+    position: relative;
+    margin-top: 80px !important;
+    display: block !important;
+}
+
+.style-two .secondary-menu .secondary-menu-list .close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    left: auto;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+.style-two .secondary-menu .secondary-menu-list .close .toggle-bar {
+	content: "";
+	background: #333;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	-webkit-transition: all ease 0.35s;
+	-moz-transition: all ease 0.35s;
+	transition: all ease 0.35s;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.style-two .secondary-menu .secondary-menu-list .close .toggle-bar:last-child {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.style-two .secondary-menu .secondary-menu-list .close:hover .toggle-bar {
+	background: #f00;
+}
+
+.style-two .secondary-menu ul li {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.style-two .secondary-menu ul li a {
+	display: block;
+	padding: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.site-header.style-two .secondary-menu ul.nav-menu > li:first-child a {
+    padding-left: 15px;
+}
+
+.style-two .secondary-menu ul li.menu-item-has-children > a {
+	padding-right: 30px;
+}
+
+.style-two .secondary-menu ul li.menu-item-has-children .submenu-toggle {
+	top: 0;
+	width: 25px;
+	height: 50px;
+	font-size: inherit;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	right: 5px;
+	-webkit-transform: none;
+	-moz-transform: none;
+	transform: none;
+	-webkit-transition: all ease 0.35s;
+	-moz-transition: all ease 0.35s;
+	transition: all ease 0.35s;
+}
+
+.style-two .secondary-menu ul li.menu-item-has-children .submenu-toggle.active {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.style-two .secondary-menu ul ul {
+	display: none;
+	position: static;
+	width: 100%;
+	opacity: 1;
+	visibility: visible;
+	box-shadow: none;
+	background: rgba(0,0,0,0.02);
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.style-two .secondary-menu .mobile-menu.ps--active-y {
+    padding-left: 15px;
+}
+
+.site-header.style-two .site-branding {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.site-header.style-two .secondary-menu .ps__rail-y {
+    position: absolute;
+    width: 10px;
+    background: rgba(var(--primary-color-rgb), 0.3);
+    border-radius: 20px;
+}
+
+.site-header.style-two .secondary-menu .ps__rail-y .ps__thumb-y {
+    position: absolute;
+    background: rgba(var(--primary-color-rgb), 0.75);
+    width: 6px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+}
+
+.site-header.style-two .secondary-menu .ps__rail-y .ps__thumb-y.ps--clicking, 
+.site-header.style-two .secondary-menu .ps__rail-y .ps__thumb-y:hover {
+    background: rgba(var(--primary-color-rgb), 0.9);
+}
+
+.site-header.style-two .header-bottom {
+    padding: 0;
+}
+
+.site-header.style-two .header-bottom .main-navigation {
+    justify-content: center;
+}
+
+.header-t .header-search + .cart-block {
+    border-left: 1px solid rgba(0,0,0,0.15);
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+/*=============================
+BANNER STYLE TWO
+=============================*/
+.site-banner.style-two .banner-caption {
+	text-align: left;
+	bottom: 0;
+	background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.4));
+	background: -moz-linear-gradient(transparent, rgba(0,0,0,0.4));
+	background: -ms-linear-gradient(transparent, rgba(0,0,0,0.4));
+	background: -o-linear-gradient(transparent, rgba(0,0,0,0.4));
+	background: linear-gradient(transparent, rgba(0,0,0,0.4));
+	padding: 60px 40px 40px 40px;
+}
+
+.site-banner.style-two .banner-caption .container {
+	max-width: 100%;
+}
+
+.site-banner.style-two .banner-caption .cat-links a, 
+.site-banner.style-two .banner-caption .cat-links a::after {
+	color: #fff;
+}
+
+.site-banner.style-two .banner-caption .banner-title, 
+.site-banner.style-two .item:first-child .banner-caption .banner-title {
+	background: none;
+	color: #fff;
+	font-size: 1.3333em;
+}
+
+.site-banner.style-two .banner-caption .banner-title a {
+	color: #fff;
+}
+
+.site-banner.style-two .banner-caption .banner-title a:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.site-banner.style-two .banner-meta > span {
+	font-size: 0.6666em;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.site-banner.style-two .banner-meta > span::after {
+	content: "";
+	background: rgba(255,255,255,0.25);
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: middle;
+	border-radius: 100%;
+}
+
+.site-banner.style-two .banner-meta > span:last-child::after {
+	display: none;
+}
+
+.site-banner.style-two .banner-meta > span a {
+	color: #fff;
+}
+
+.site-banner.style-two .banner-meta > span a:hover {
+	color: var(--primary-color);
+}
+
+.site-banner.style-two .owl-carousel .owl-stage-outer + .owl-nav [class*="owl-"] {
+	left: 2%;
+	background-color: rgba(255,255,255,0.8);
+	border-color: rgba(255,255,255,0.8);
+}
+
+.site-banner.style-two .owl-carousel .owl-stage-outer + .owl-nav .owl-next {
+	left: auto;
+	right: 2%;
+}
+
+.site-banner.style-two .owl-carousel .owl-stage-outer + .owl-nav [class*="owl-"]:hover {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+/*========================================
+BLOG POST LAYOUT TWO
+========================================*/
+.post-layout-two .site-main {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.post-layout-two .site-main article {
+	display: flex;
+	flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.post-layout-two.rightsidebar .site-main article, 
+.post-layout-two.leftsidebar .site-main article {
+    width: 100%;
+}
+
+.post-layout-two .site-main article .post-thumbnail {
+	margin-bottom: 0;
+	width: 47%;
+}
+
+.post-layout-two .site-main article .content-wrap {
+	width: 53%;
+	padding-left: 30px;
+}
+
+.post-layout-two .site-main article .content-wrap .entry-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+/*===============================
+RESPONSIVE STYLESHEET
+===============================*/
+@media screen and (max-width: 1024px) {
+    /*============================
+	SITE HEADER STYLE TEN
+	============================*/
+	.site-header.style-two .site-branding {
+		flex: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /*============================
+	SITE HEADER STYLE TEN
+	============================*/
+	.site-header.style-two .container {
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 420px;
+	}
+
+	.site-header.style-two .secondary-menu {
+		flex: initial;
+		order: 2;
+	}
+
+	.site-header.style-two .site-branding {
+		text-align: left;
+		justify-content: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.site-header.style-two .site-branding .site-logo + .site-title-wrap {
+		padding-left: 15px;
+	}
+
+	.site-header.style-two .right {
+		flex: auto;
+		justify-content: center;
+		width: 100%;
+		margin-top: 15px;
+		order: 3;
+    }
+    
+    /*==========================
+	SITE BANNER STYLE TWO
+	==========================*/
+	.site-banner.style-two .item-wrap {
+		max-width: 420px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.site-banner.style-two .banner-caption {
+		padding: 20px;
+    }
+    
+    /*===================================
+	BLOG POST LAYOUT TWO
+	===================================*/
+	.post-layout-two .site-main article {
+		flex-direction: column;
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+	}
+
+	.post-layout-two .site-main article .post-thumbnail {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.post-layout-two .site-main article .content-wrap {
+		width: 100%;
+		padding-left: 0;
+	}
+}
