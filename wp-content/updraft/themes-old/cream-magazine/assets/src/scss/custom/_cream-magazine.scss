@@ -1,0 +1,42 @@
+
+// Global Grid Layout
+
+.post-display-grid {
+
+    margin-bottom:20px;
+}
+
+.post-display-grid .card_content {
+
+    padding: 20px;
+    background-color: rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,.03);
+}
+
+.post-display-grid .post-format span {
+
+    background-color: $primary_color;
+    border-color: $primary_color;
+    color:$white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
+.post-display-grid .card_content .entry_cats {
+	
+	margin-bottom: 10px;
+}
+
+.post-display-grid .card_content .post_title h2 {
+
+    font-size: $typo_medium;   
+}
+
+.post-display-grid .card_content .post_meta {
+
+    margin-top: 10px;
+}

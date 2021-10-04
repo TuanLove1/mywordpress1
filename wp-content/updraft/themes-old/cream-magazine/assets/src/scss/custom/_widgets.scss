@@ -1,0 +1,318 @@
+.widget-title {
+    
+    margin-bottom: 25px;
+}
+
+.widget-title h2 {
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.widget ul {
+    
+    margin: 0px;
+    padding:0;
+    list-style: none;
+}
+
+.widget ul li {
+    
+    margin: 0px;
+}
+
+.widget_archive li,
+.widget_categories li,
+.widget_recent_entries li,
+.widget_meta li,
+.widget_recent_comments li,
+.widget_rss li,
+.widget_pages li,
+.widget_nav_menu li {
+
+	position: relative;
+    border-bottom: 1px solid $border_color;
+    padding: 10px 0;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.widget_archive li:hover,
+.widget_categories li:hover,
+.widget_recent_entries li:hover,
+.widget_meta li:hover,
+.widget_recent_comments li:hover,
+.widget_rss li:hover,
+.widget_pages li:hover,
+.widget_nav_menu li:hover {
+	
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.widget_nav_menu li:first-child,
+.widget_archive ul li:first-child,
+.widget_categories ul li:first-child,
+.widget_pages ul li:first-child,
+.widget_meta ul li:first-child,
+.widget_rss li:first-child,
+.widget_recent_entries li:first-child,
+.widget_recent_comments li:first-child {
+
+    padding-top: 0;
+}
+
+.widget_nav_menu li:last-child,
+.widget_archive ul li:last-child,
+.widget_categories ul li:last-child,
+.widget_pages ul li:last-child,
+.widget_meta ul li:last-child,
+.widget_rss li:last-child,
+.widget_recent_entries li:last-child,
+.widget_recent_comments li:last-child {
+
+    padding-bottom: 0;
+    border-bottom:none;
+}
+
+.widget_archive a,
+.widget_categories a,
+.widget_recent_entries a,
+.widget_meta a,
+.widget_recent_comments li,
+.widget_rss li,
+.widget_nav_menu a {
+
+    position: relative;
+    display: inline-block;
+}
+
+.widget_recent_entries a {
+
+    display: block;
+}
+
+.widget_pages li.menu-item-has-children ul.sub-menu,
+.widget_categories li.menu-item-has-children ul.sub-menu {
+
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.widget_nav_menu a span.menu-item-description {
+    
+    display: none;
+}
+
+
+// nav widget 
+
+.widget_nav_menu ul.menu {
+	
+	list-style: none;
+}
+
+.widget_nav_menu li:last-child a {
+
+    border-bottom: none;
+}
+
+.widget_nav_menu ul.menu li.menu-item-has-children {
+	
+	border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.widget_nav_menu ul.menu li.menu-item-has-children > a {
+	
+	display: block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border_color;
+}
+
+.widget_nav_menu ul.menu li.menu-item-has-children > a ul.sub-menu {
+	
+	list-style: none;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.widget_nav_menu ul.menu li.menu-item-has-children > a ul.sub-menu li:first-child {
+	
+	padding-top: 0px;	
+}
+
+
+// recent posts widget 
+
+.widget_recent_entries .post-date {
+
+    color: $special_purpose_color;
+    display: block;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+
+// RSS widget 
+
+.widget_rss .widget-title h3 a:hover {
+	
+	color:$secondary_color;
+}
+
+.widget_rss ul li a {
+
+    font-style: italic;
+}
+
+.widget_rss ul li a:hover {
+
+
+    color:$secondary_color;
+}
+
+
+// Search Widget
+
+.widget_search {
+
+    display:block;
+}
+
+.cm-search-form {
+
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.cm-search-form input[type="search"] {
+
+    width: 100%;
+    padding-right: 40px;
+}
+
+.cm-search-form .cm-submit-btn {
+    
+    padding:0;
+    margin:0;
+    border:none;
+    border-left: 1px solid $border_color;
+    color:$primary_color;
+    background-color:transparent;
+    font-size: 16px;
+    width: 35px;
+    height: 22px;
+    line-height: 22px;
+    position: absolute;
+    right: 4px;
+    top: auto;
+    z-index: 1;
+}
+
+.cm-search-form .cm-submit-btn:hover {
+    
+    border:none;
+    border-left: 1px solid $border_color;
+    background-color:transparent;
+}
+
+.cm-search-form .cm-submit-btn:focus {
+
+    outline:0;
+}
+
+
+// Calendar Widget
+
+.calendar_wrap caption {
+
+    background: none repeat scroll 0 0 $primary_color;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid #2b2b2b;
+}
+
+.calendar_wrap table {
+
+    border-collapse: collapse;
+    width: auto;
+}
+
+.calendar_wrap table th {
+
+    border: 1px solid $border_color;
+    font-weight: bold;
+    padding: 8px 0px;
+    text-align: center;
+    width: 5%
+}
+
+.calendar_wrap table td {
+
+    border: 1px solid $border_color;
+    padding: 8px 0px;
+    width: 5%;
+    text-align: center;
+}
+
+.calendar_wrap table td#prev,
+.calendar_wrap table td#next {
+
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.calendar_wrap table td#next {
+
+    text-align: right;
+}
+
+
+// Tag Cloud Widget
+
+.widget_tag_cloud .tagcloud {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.widget_tag_cloud .tagcloud a {
+    
+    flex: 1 auto;
+    text-transform: capitalize;
+    font-size: 15px !important;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px;
+    color: $primary_color;
+    font-weight: 400;
+    border: 1px solid #e2e2e2; //$footer_lines_color
+}
+
+.widget_tag_cloud .tagcloud a:hover {
+	
+	color: $third_color;
+    border-color: $third_color;
+}

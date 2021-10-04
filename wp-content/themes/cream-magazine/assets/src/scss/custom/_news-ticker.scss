@@ -1,0 +1,117 @@
+.ticker-news-area {
+    
+    margin-top: 30px;
+}
+
+.news_ticker_wrap {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: unset;
+    flex-wrap: unset;
+    position: relative;
+}
+
+.news_ticker_wrap .ticker_head,
+.news_ticker_wrap .ticker_items {
+    
+    height: 30px;
+    line-height: 30px;
+}
+
+.news_ticker_wrap .ticker_head {
+    
+    display: block;
+    max-width: 200px;
+    overflow: hidden;
+    background-color: $secondary_color;
+    color: $white;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.news_ticker_wrap .ticker_head .ticker_title {
+    
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.news_ticker_wrap .ticker_items {
+    
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    width: calc(100% - 200px);
+    padding: 0px 15px;
+}
+
+.ticker_carousel {
+    
+    position: inherit;
+}
+
+.ticker_carousel .owl-item {
+    
+    opacity: 0;
+}
+
+.ticker_carousel .owl-item .item p {
+    
+    margin: 0px;
+}
+
+.ticker_carousel .owl-item.active {
+    
+    opacity: 1;
+}
+
+.ticker_carousel .owl-nav {
+
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 2;
+}
+
+.ticker_carousel.owl-carousel .owl-nav button.owl-prev,
+.ticker_carousel.owl-carousel .owl-nav button.owl-next {
+
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    background-color: $white;
+    color: $secondary_color;
+    border: 1px solid $border_color;
+    border-radius: 0px;
+}
+
+.ticker_carousel.owl-carousel .owl-nav button i {
+
+    color: $secondary_color;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+@media( max-width: 575px ) {
+    
+    .news_ticker_wrap .ticker_head .ticker_title {
+
+        display: none;
+    }
+
+    .news_ticker_wrap .ticker_items {
+
+        max-width: 100%;
+        width: calc(100% - 30px);
+        padding: 0px 75px 0px 10px;
+        text-overflow: ellipsis;
+        height: auto;
+        line-height: 1.3;
+    }
+}

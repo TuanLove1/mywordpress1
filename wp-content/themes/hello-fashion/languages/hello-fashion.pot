@@ -1,0 +1,213 @@
+# <!=Copyright (C) 2020 Blossom Themes
+# This file is distributed under the same license as the Hello Fashion package.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Hello Fashion 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/hello-fashion\n"
+"POT-Creation-Date: 2020-10-12 04:16:33+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: functions.php:57
+msgid "Demo & Documentation"
+msgstr ""
+
+#: functions.php:70
+msgid "Demo Link: %1$sClick here.%2$s"
+msgstr ""
+
+#: functions.php:72
+msgid "Documentation Link: %1$sClick here.%2$s"
+msgstr ""
+
+#: functions.php:90
+msgid "Appearance Settings"
+msgstr ""
+
+#: functions.php:91
+msgid "Customize Typography, Header Image & Background Image"
+msgstr ""
+
+#: functions.php:109
+msgid "Primary Color"
+msgstr ""
+
+#: functions.php:110
+msgid "Primary color of the theme."
+msgstr ""
+
+#: functions.php:121
+msgid "Typography Settings"
+msgstr ""
+
+#: functions.php:141
+msgid "Primary Font"
+msgstr ""
+
+#: functions.php:142
+msgid "Primary font of the site."
+msgstr ""
+
+#: functions.php:163
+msgid "Secondary Font"
+msgstr ""
+
+#: functions.php:164
+msgid "Secondary font of the site."
+msgstr ""
+
+#: functions.php:186
+msgid "Font Size"
+msgstr ""
+
+#: functions.php:187
+msgid "Change the font size of your site."
+msgstr ""
+
+#: functions.php:208
+msgid "Layout Settings"
+msgstr ""
+
+#: functions.php:216 functions.php:236
+msgid "Header Layout"
+msgstr ""
+
+#: functions.php:237
+msgid "This is the layout for header."
+msgstr ""
+
+#: functions.php:250 functions.php:270
+msgid "Slider Layout"
+msgstr ""
+
+#: functions.php:271
+msgid "Choose the layout of the slider for your site."
+msgstr ""
+
+#: functions.php:284
+msgid "Home Page Layout"
+msgstr ""
+
+#: functions.php:304
+msgid "Homepage Layout"
+msgstr ""
+
+#: functions.php:305
+msgid "Choose the layout of the homepage for your site."
+msgstr ""
+
+#: functions.php:318
+msgid "General Sidebar Layout"
+msgstr ""
+
+#: functions.php:338
+msgid "Page Sidebar Layout"
+msgstr ""
+
+#: functions.php:339
+msgid ""
+"This is the general sidebar layout for pages. You can override the sidebar "
+"layout for individual page in respective page."
+msgstr ""
+
+#: functions.php:365
+msgid "Post Sidebar Layout"
+msgstr ""
+
+#: functions.php:366
+msgid ""
+"This is the general sidebar layout for posts & custom post. You can "
+"override the sidebar layout for individual post in respective post."
+msgstr ""
+
+#: functions.php:392
+msgid "Default Sidebar Layout"
+msgstr ""
+
+#: functions.php:393
+msgid "This is the general sidebar layout for whole site."
+msgstr ""
+
+#: functions.php:549
+msgid "Find Your Best Holiday"
+msgstr ""
+
+#: functions.php:550
+msgid "Find great adventure holidays and activities around the planet."
+msgstr ""
+
+#: functions.php:551
+msgid "Read More"
+msgstr ""
+
+#: functions.php:801
+msgid "Pages:"
+msgstr ""
+
+#: functions.php:973
+msgid " Hello Fashion | Developed By "
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Blossom Themes"
+msgstr ""
+
+#: functions.php:975
+msgid " Powered by %s. "
+msgstr ""
+
+#: functions.php:975
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Hello Fashion"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://blossomthemes.com/wordpress-themes/hello-fashion/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Hello Fashion is an easy to use and mobile-friendly WordPress theme for "
+"professional bloggers. With Hello Fashion, you can create a website of "
+"different niches such as fashion, travel, lifestyle, beauty, recipes, "
+"makeup, journal, mom blog, coaching and much more. You can also choose from "
+"unlimited colors and 900+ Google Fonts to change your site look and feel "
+"with a single click. In addition, you can flaunt your Instagram posts and "
+"increase your followers. The newsletter integration will help you grow your "
+"email list and stay in touch with your readers. Hello Fashion is "
+"SEO-friendly, speed optimized, translation ready, RTL ready and WooCommerce "
+"compatible. Check demo at "
+"https://blossomthemes.com/theme-demo/?theme=hello-fashion, read the "
+"documentation at https://docs.blossomthemes.com/hello-fashion/, and get "
+"support at https://blossomthemes.com/support-ticket/."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://blossomthemes.com/"
+msgstr ""
+
+#: functions.php:827
+#. Translators: If there are characters in your language that are not supported
+#. by respective fonts, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Primary Font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:828
+msgctxt "Secondary Font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:829
+msgctxt "Site Title Font: on or off"
+msgid "on"
+msgstr ""
