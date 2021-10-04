@@ -1,0 +1,218 @@
+/*
+ * Theme Name: Cream Magazine
+ *
+ * Adding support for languages written in a Right To Left (RTL) direction is easy -
+ * it's just a matter of overwriting all the horizontal positioning attributes
+ * of your CSS stylesheet in a separate stylesheet file named rtl.css.
+ *
+ * https://codex.wordpress.org/Right-to-Left_Language_Support
+ */
+
+
+/*
+====================================
+=
+= RTL direction
+=
+==========================
+*/
+
+body.rtl {
+
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+
+/*
+====================================
+=
+= Common styles
+=
+==========================
+*/
+
+body.rtl #toTop {
+
+	left: auto;
+	bottom: 10px;
+    right: 10px;
+}
+
+.owl-carousel.owl-rtl {
+
+    direction: rtl; 
+}
+
+.owl-carousel.owl-rtl .owl-item {
+
+    float: right; 
+}
+
+.cm_banner-carousel-five .owl-nav,
+.cm_middle_post_widget_six .middle_widget_six_carousel .owl-nav {
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+/*
+====================================
+=
+= Header styles
+=
+==========================
+*/
+
+
+body.rtl .header-search-container form {
+
+	right: auto;
+}
+
+body.rtl .primary-navigation ul li a span.menu-item-description {
+
+	margin-right:0;
+	margin-left: 7px;
+}
+
+body.rtl .primary-navigation li.has-sub>a:after {
+
+	margin-right: 0;
+    margin-left: 3px;
+}
+
+
+/*
+====================================
+=
+= Banner styles
+=
+==========================
+*/
+
+
+.cm_banner-five .gutter-right .right-content-holder .custom_row .col:first-child {
+
+	padding-right: 15px;
+}
+
+.cm_banner-five .gutter-left {
+
+	padding-right: 15px;
+}
+
+.cm_banner-five .gutter-right {
+
+	padding-left: 15px;
+}
+
+
+/*
+====================================
+=
+= Single
+=
+==========================
+*/
+
+
+body.rtl .comments-area .comment-author .says {
+	
+	margin-right:0;
+	margin-left: 5px;
+}
+
+/*
+=================================
+=
+= RTL Responsive
+=
+==========================
+*/ 
+
+@media ( max-width: 991px ) {
+
+
+	/* banner */
+
+	.cm_banner-five .gutter-left {
+
+		padding-left: 15px;
+		padding-right: 15px;
+		
+	}
+
+	.cm_banner-five .gutter-left .card {
+
+		margin-left: 0;
+    	margin-right: 0;
+	}
+
+	.cm_banner-five .gutter-right {
+
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:first-child .post_thumb {
+
+		margin-right: 0;
+	}
+
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(3) .post_thumb {
+
+		margin-right: 0;
+	}
+
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(4) .post_thumb {
+
+		margin-left: 0;
+	}
+
+
+}
+
+@media ( max-width: 768px ) {
+
+	.comments-area .comment-list .children {
+
+		margin-right:0;
+		margin-left:5px;
+	}
+}
+
+@media ( max-width: 576px ) { 
+
+	
+	/* banner */
+
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(2),
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(4) {
+
+		padding-right: 15px;
+	}
+	
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(1),
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(3) {
+
+		padding-left: 15px;
+	}
+
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(3) .post_thumb,
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:first-child .post_thumb {
+
+		margin-left: 0;
+	}
+
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(2) .post_thumb,
+	.cm_banner-five .gutter-right .right-content-holder .custom_row .col:nth-child(4) .post_thumb {
+
+		margin-right: 0;
+	}
+}
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+.the_content:before,
+.the_content:after {
+    
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.the_content:before,
+.the_content:after {
+    
+    clear: both;
+}

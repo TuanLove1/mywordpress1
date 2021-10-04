@@ -1,0 +1,361 @@
+/* Post Title */
+
+body.single .content-entry article,
+body.page .content-entry article {
+    
+    margin: 0px;
+}
+
+body.single  .content-entry article .the_title,
+body.page  .content-entry article .the_title {
+	
+	margin-bottom: 10px;
+}
+
+body.single  .content-entry article .the_title h1,
+body.page  .content-entry article .the_title h1 {
+	
+	font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Post Meta */
+
+body.single  .content-entry article.post-detail .cm-post-meta {
+	
+	margin-bottom: 1.5em;
+}
+
+
+/* Featured Image */
+
+body.single  .content-entry article .post_thumb,
+body.page  .content-entry article .post_thumb {
+
+    margin-bottom:30px;
+}
+
+body.single  .content-entry article .post_thumb figure figcaption,
+body.page  .content-entry article .post_thumb figure figcaption {
+    
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+/* Post Tags */
+
+body.single .content-entry article.post-detail .post_tags {
+	
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Related Posts */
+
+.cm_related_post_container {
+
+    margin-bottom: 10px;
+}
+
+.cm_related_post_container .lazy-thumb {
+
+    padding-bottom: 56.25%;
+}
+
+.cm_related_post_container .card_content {
+
+    padding: 20px;
+    background-color: rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,.03);
+}
+
+.cm_related_post_container .entry_cats {
+	
+	margin-bottom: 10px;
+}
+
+.cm_related_post_container .post_title h2 {
+
+    font-size: $typo_medium;   
+}
+
+.cm_related_post_container .post_meta {
+
+    margin-top: 10px;
+}
+
+
+
+/* Author Section */
+
+.author_box {
+
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.author_box .author_thumb img {
+
+    @include border_radius(100%);
+}
+
+.author_box .author_details {
+    
+    margin-left: 30px;
+}
+
+.author_box .author_desc {
+
+    margin-bottom: 15px;
+}
+
+.author_box .author_name h3 {
+	
+    font-size: 24px;
+	text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Post Navigation */
+
+.post-navigation {
+
+    margin-bottom: 40px;
+}
+
+.post-navigation .nav-links {
+    
+    height: auto;
+    overflow: hidden;
+}
+
+
+.post-navigation .nav-links .nav-previous {
+
+    float: left;
+}
+
+.post-navigation .nav-links .nav-next {
+
+    float: right;
+}
+
+.post-navigation .nav-links .nav-previous a,
+.post-navigation .nav-links .nav-next a {
+    
+    display:block;
+    position:relative;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: $secondary_color;
+}
+
+.post-navigation .nav-links .nav-previous a::before {
+
+    content:"\f104";
+    font-family:'FontAwesome';
+    margin-right: 15px;
+}
+
+.post-navigation .nav-links .nav-next a::after {
+    
+    content:"\f105";
+    font-family:'FontAwesome';
+    margin-left: 15px;
+}
+
+
+/* Comments */
+
+
+.comments-area ul,
+.comments-area ol {
+    
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.comments-area footer {
+    
+    color:$primary_color;
+    background-color:transparent;
+}
+
+.comments-area .comments-title {
+
+    font-size: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FF3D00;
+}
+
+.comments-area .comment-respond .comment-reply-title {
+
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.comments-area .comment-respond .comment-reply-title:after {
+
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    margin-left: 15px;
+    background-color: #FF3D00;
+}
+
+.comments-area .comment-reply-link,
+.comments-area .comment-edit-link {
+
+    font-size: 15px;
+    font-weight:normal;
+    color:$primary_color;
+    text-transform:inherit;
+    text-decoration: none;
+}
+
+.comments-area .comment-reply-link::after,
+.comments-area .comment-edit-link::after  {
+
+    content:'';
+    display:none;
+}
+
+.comments-area .comment-meta {
+
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+}
+
+.comments-area .comment-author {
+
+    flex:100%;
+    max-width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+.comments-area .comment-author .avatar {
+    
+    margin-right: 15px;
+    @include border-radius(100%);
+    -webkit-box-shadow: 0px 2px 30px -5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 30px -5px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 30px -5px rgba(0,0,0,0.3);
+}
+
+.comments-area .comment-author .says {
+
+    margin-left: 5px;
+}
+
+.comments-area .comment-metadata,
+.comments-area .comment-awaiting-moderation {
+
+    flex:100%;
+    max-width:100%;
+    padding-left: 60px;
+    margin-top: -25px;
+}
+
+.comments-area .comment-metadata a {
+    
+    font-family:$system_font;
+    font-size: 13px;
+}
+
+.comments-area .comment-metadata .edit-link {
+
+    margin-left: 5px;
+    padding-left: 8px;
+    border-left:1px solid $border_color;
+}
+
+.comments-area .comment-metadata .comment-edit-link {
+    
+    padding:0;
+    font-weight:normal;
+}
+
+.comments-area .comment-metadata .comment-edit-link::before  {
+
+    content:'\e867';
+    font-family:'feather';
+    margin-right: 3px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.comments-area .comment-content {
+    
+    position:relative;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top:1px solid $border_color;
+}
+
+.comments-area .comment-list .comment-body {
+    
+    border:1px solid $border_color;
+    padding:30px;
+    margin-bottom: 30px;
+}
+
+.comments-area .comment-content p:last-child {
+
+    margin-bottom: 0;
+}
+
+.comments-area .reply {
+
+    margin-top: 20px;
+}
+
+// depts 
+
+.comments-area .comment-list .children {
+
+    margin-left: 30px;
+}
+
+// respond 
+
+.comments-area .comment-reply-title {
+
+    margin-bottom: 10px;
+}
+
+.comments-area .comment-form {
+
+    margin-bottom: 30px;
+}
+
+.comment-respond .form-submit {
+
+    margin-top:20px;
+    margin-bottom: 0; 
+}

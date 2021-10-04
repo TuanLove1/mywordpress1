@@ -1,0 +1,195 @@
+# Translation of Themes - Hello Fashion in Vietnamese
+# This file is distributed under the same license as the Themes - Hello Fashion package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-11-19 00:32:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - Hello Fashion\n"
+
+#. Theme Name of the theme
+msgid "Hello Fashion"
+msgstr "Hello Fashion"
+
+#. Description of the theme
+msgid "Hello Fashion is an easy to use and mobile-friendly WordPress theme for professional bloggers. With Hello Fashion, you can create a website of different niches such as fashion, travel, lifestyle, beauty, recipes, makeup, journal, mom blog, coaching and much more. You can also choose from unlimited colors and 900+ Google Fonts to change your site look and feel with a single click. In addition, you can flaunt your Instagram posts and increase your followers. The newsletter integration will help you grow your email list and stay in touch with your readers. Hello Fashion is SEO-friendly, speed optimized, translation ready, RTL ready and WooCommerce compatible. Check demo at https://blossomthemes.com/theme-demo/?theme=hello-fashion, read the documentation at https://docs.blossomthemes.com/hello-fashion/, and get support at https://blossomthemes.com/support-ticket/."
+msgstr "Hello Fashion là một giao diện WordPress cực dễ sử dụng và thân thiện với các thiết bị di động dành cho blogger chuyên nghiệp. Với Hello Fashion, bạn có thể tạo trang web chứa nhiều ngách khác nhau như thời trang, du lịch, đời sống, làm đẹp, trang điểm, nhật ký, blog mẹ bỉm sữa, huấn luyện,... Bạn có thể thoải mái thay đổi phông chữ chỉ với một cú click từ hơn 900 loại phông chữ cung cấp bới Google. Ngoài ra, bạn cũng có thể hiển thị các bài đăng trên Instagram để tăng lượng follower. Việc tích hợp bản tin sẽ giúp bạn phát triển danh sách email và giữ liên lạc với độc giả của mình. Hello Fashion là website thân thiện với SEO, tối ưu hóa tốc độ, có sẵn bản dịch và RLT cũng như thương thích WooCommerce. Xem demo tại https://blossomthemes.com/theme-demo/?theme=hello-fashion, xem văn bản tại https://docs.blossomthemes.com/hello-fashion/, nhận trợ giúp tại https://blossomthemes.com/support-ticket/."
+
+#: functions.php:163
+msgid "Secondary Font"
+msgstr "Phông chữ thứ hai"
+
+#: functions.php:142
+msgid "Primary font of the site."
+msgstr "Phông chữ chính của trang web."
+
+#: functions.php:141
+msgid "Primary Font"
+msgstr "Phông chữ chính"
+
+#: functions.php:110
+msgid "Primary color of the theme."
+msgstr "Màu sắc chính của giao diện."
+
+#: functions.php:109
+msgid "Primary Color"
+msgstr "Màu chính"
+
+#: functions.php:91
+msgid "Customize Typography, Header Image & Background Image"
+msgstr "Tùy chỉnh kiểu chữ, hình ảnh tiêu đề và hình nền"
+
+#: functions.php:90
+msgid "Appearance Settings"
+msgstr "Cài đặt giao diện"
+
+#: functions.php:72
+msgid "Documentation Link: %1$sClick here.%2$s"
+msgstr "Liên kết tài liệu: %1$sNhấp vào đây.%2$s"
+
+#: functions.php:70
+msgid "Demo Link: %1$sClick here.%2$s"
+msgstr "Liên kết demo: %1$sNhấp vào đây.%2$s"
+
+#: functions.php:57
+msgid "Demo & Documentation"
+msgstr "Demo và hướng dẫn"
+
+#: functions.php:365
+msgid "Post Sidebar Layout"
+msgstr "Bố cục Sidebar trong bài viết"
+
+#: functions.php:339
+msgid "This is the general sidebar layout for pages. You can override the sidebar layout for individual page in respective page."
+msgstr "Đây là cách bố trí sidebar chung cho các trang. Bạn có thể ghi đè bố cục sidebar cho từng trang trong trang tương ứng."
+
+#: functions.php:338
+msgid "Page Sidebar Layout"
+msgstr "Bố cục Sidebar trong trang"
+
+#: functions.php:318
+msgid "General Sidebar Layout"
+msgstr "Bố cục sidebar chung"
+
+#: functions.php:284
+msgid "Home Page Layout"
+msgstr "Bố cục trang chủ"
+
+#: functions.php:250 functions.php:270
+msgid "Slider Layout"
+msgstr "Bố cục Slider"
+
+#: functions.php:237
+msgid "This is the layout for header."
+msgstr "Đây là bố cục cho header."
+
+#: functions.php:216 functions.php:236
+msgid "Header Layout"
+msgstr "Bố cục header"
+
+#: functions.php:208
+msgid "Layout Settings"
+msgstr "Cài đặt bố cục"
+
+#: functions.php:186
+msgid "Font Size"
+msgstr "Cỡ chữ"
+
+#: functions.php:164
+msgid "Secondary font of the site."
+msgstr "Phông chữ thứ hai của trang web."
+
+#: functions.php:975
+msgid "https://wordpress.org/"
+msgstr "https://vi.wordpress.org/"
+
+#: functions.php:975
+msgid " Powered by %s. "
+msgstr "Được cung cấp bởi %s."
+
+#: functions.php:973
+msgid " Hello Fashion | Developed By "
+msgstr "Hello Fashion | Phát triển bởi"
+
+#: functions.php:551
+msgid "Read More"
+msgstr "Đọc tiếp"
+
+#: functions.php:550
+msgid "Find great adventure holidays and activities around the planet."
+msgstr "Tìm kỳ nghỉ phiêu lưu tuyệt vời và các hoạt động trên khắp hành tinh."
+
+#: functions.php:549
+msgid "Find Your Best Holiday"
+msgstr "Tìm kỳ nghỉ lý tưởng của bạn"
+
+#: functions.php:393
+msgid "This is the general sidebar layout for whole site."
+msgstr "Đây là cách bố trí sidebar chung cho toàn bộ trang web."
+
+#: functions.php:392
+msgid "Default Sidebar Layout"
+msgstr "Bố cục Sidebar mặc định"
+
+#: functions.php:366
+msgid "This is the general sidebar layout for posts & custom post. You can override the sidebar layout for individual post in respective post."
+msgstr "Đây là cách bố trí sidebar chung cho bài viết & bài tùy chỉnh. Bạn có thể ghi đè bố cục sidebar cho từng bài viết trong bài tương ứng."
+
+#: functions.php:305
+msgid "Choose the layout of the homepage for your site."
+msgstr "Chọn bố cục trang chủ cho trang web của bạn."
+
+#: functions.php:801
+msgid "Pages:"
+msgstr "Các trang:"
+
+#. Translators: If there are characters in your language that are not supported
+#. by respective fonts, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:827
+msgctxt "Primary Font: on or off"
+msgid "on"
+msgstr "bật"
+
+#: functions.php:828
+msgctxt "Secondary Font: on or off"
+msgid "on"
+msgstr "bật"
+
+#: functions.php:829
+msgctxt "Site Title Font: on or off"
+msgid "on"
+msgstr "bật"
+
+#: functions.php:304
+msgid "Homepage Layout"
+msgstr "Bố cục trang chủ"
+
+#: functions.php:271
+msgid "Choose the layout of the slider for your site."
+msgstr "Chọn bố cục slider cho trang web của bạn."
+
+#: functions.php:187
+msgid "Change the font size of your site."
+msgstr "Thay đổi cỡ chữ của trang web của bạn."
+
+#: functions.php:121
+msgid "Typography Settings"
+msgstr "Cài đặt font chữ"
+
+#. Author URI of the theme
+msgid "https://blossomthemes.com/"
+msgstr "https://blossomthemes.com/"
+
+#. Author of the theme
+#: functions.php:974
+msgid "Blossom Themes"
+msgstr "Blossom Themes"
+
+#. Theme URI of the theme
+msgid "https://blossomthemes.com/wordpress-themes/hello-fashion/"
+msgstr "https://blossomthemes.com/wordpress-themes/hello-fashion/"

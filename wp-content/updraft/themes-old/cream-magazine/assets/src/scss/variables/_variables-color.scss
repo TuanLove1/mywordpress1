@@ -1,0 +1,33 @@
+
+// Import bunch of colors
+
+
+@import 'colors/colors';
+
+
+// General Color Variables 
+
+$primary_color 					: #010101; // 
+$secondary_color				: #FF3D00; // 
+$third_color					: #FF3D00; // 
+$general_text_color				: #777777;
+$special_purpose_color			: #717171;
+$border_color					: #eeeeee;
+$mask_background				: rgba(50,50,50,0.2);
+$section_bg						: #f5f5f5;
+
+$auth_date_cmnt_color			: #666666;
+$auth_date_cmnt_color_bg		: #cccccc;
+
+$breadcrumb_link_color			: #666666;
+
+
+//  Footer section possible variables 
+
+$footer_bg						: #111111;
+$footer_bottom_bg				: #010101;
+$footer_section_text_color		: #f1f1f1;
+$footer_section_links_color		: #f1f1f1;
+$footer_heading_color			: #e4e4e4;
+$footer_lines_color				: #2b2b2b;
+$footer_meta_color				: $auth_date_cmnt_color_bg

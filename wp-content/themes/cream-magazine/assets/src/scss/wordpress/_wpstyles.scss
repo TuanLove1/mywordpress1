@@ -1,0 +1,223 @@
+.wp-caption {
+    
+}
+
+.wp-caption img[class*="wp-image-"] {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    
+}
+
+.wp-caption-text {
+
+    text-align: center;
+}
+
+
+/* Comments */
+
+.comment-content a {
+
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    
+    display: block;
+}
+
+/*
+***************************************************************
+*
+* 1. Assibility
+*
+***************************************************************
+*/
+
+
+// Text meant only for screen readers.
+
+.screen-reader-text {
+
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    
+    //Many screen reader and browser combinations announce broken words as they would appear visually.
+}
+
+.screen-reader-text:focus {
+
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+
+    // Above WP toolbar.
+}
+
+
+/*
+***************************************************************
+*
+* 2. Posts & pages
+*
+***************************************************************
+*/
+
+
+.sticky {
+
+    display: block;
+}
+
+.hentry {
+
+    margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+
+    display: none;
+}
+
+.page-content,
+.content-entry,
+.entry-summary {
+
+    margin: 1.5em 0 0;
+}
+
+.page-links {
+
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+
+/*
+***************************************************************
+*
+* 3. Media
+*
+***************************************************************
+*/
+
+
+.page-content .wp-smiley,
+.content-entry .wp-smiley,
+.comment-content .wp-smiley {
+
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+// Make sure embeds and iframes fit their containers.
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+
+
+// Make sure logo link wraps around logo image.
+
+.custom-logo-link {
+
+    display: inline-block;
+}
+
+
+/*
+***************************************************************
+*
+* 4. Gallery
+*
+***************************************************************
+*/
+
+
+.gallery-item {
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    padding: 5px;
+}
+
+.gallery-columns-2 .gallery-item {
+
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+
+    display: block;
+}

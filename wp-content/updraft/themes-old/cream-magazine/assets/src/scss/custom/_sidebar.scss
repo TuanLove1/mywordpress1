@@ -1,0 +1,33 @@
+.sidebar-widget-area .widget {
+
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 30px 20px;
+}
+
+.sidebar-widget-area .widget:last-child {
+    
+    margin-bottom: 0px;
+}
+
+.sidebar-widget-area .widget .widget-title h2 {
+    
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+.sidebar-widget-area .widget .widget-title h2::after {
+    
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    margin-left: 15px;
+    background-color: $secondary_color;
+}
